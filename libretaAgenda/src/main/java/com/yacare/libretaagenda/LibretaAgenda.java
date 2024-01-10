@@ -6,10 +6,6 @@ package com.yacare.libretaagenda;
 
 import gui.Pantalla;
 
-/**
- *
- * @author augus
- */
 public class LibretaAgenda {
 
     public static void main(String[] args) {
