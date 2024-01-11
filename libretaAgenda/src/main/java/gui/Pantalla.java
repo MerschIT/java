@@ -1,18 +1,14 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
- */
 package gui;
 
-/**
- *
- * @author augus
- */
 public class Pantalla extends javax.swing.JFrame {
-
-    /**
-     * Creates new form Pantalla
-     */
+    
+    String dnis[] = new String[10];
+    String nombres[] = new String[10];
+    String apellidos[] = new String[10];
+    String direcciones[] = new String[10];
+    String telefonos[] = new String[10];
+    String fechasNac[] = new String[10];
+    
     public Pantalla() {
         initComponents();
     }
@@ -124,6 +120,11 @@ public class Pantalla extends javax.swing.JFrame {
 
         btnAtras.setFont(new java.awt.Font("Dialog", 1, 24)); // NOI18N
         btnAtras.setText("<<");
+        btnAtras.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnAtrasActionPerformed(evt);
+            }
+        });
 
         btnGuardar.setFont(new java.awt.Font("Dialog", 1, 24)); // NOI18N
         btnGuardar.setText("GUARDAR");
@@ -141,6 +142,11 @@ public class Pantalla extends javax.swing.JFrame {
         txtIndice.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         txtIndice.setText("0");
         txtIndice.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        txtIndice.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txtIndiceActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
@@ -281,7 +287,17 @@ public class Pantalla extends javax.swing.JFrame {
     }//GEN-LAST:event_txtFechaNacActionPerformed
 
     private void btnGuardarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnGuardarActionPerformed
-        // TODO add your handling code here:
+        
+        String indice = txtIndice.getText();
+        int indi = Integer.parseInt(indice);
+        
+        dnis[indi] = txtDni.getText();
+        nombres[indi] = txtNombre.getText();
+        apellidos[indi] = txtApellido.getText();
+        direcciones[indi] = txtDireccion.getText();
+        telefonos[indi] = txtTelefono.getText();
+        fechasNac[indi] = txtFechaNac.getText();
+        
     }//GEN-LAST:event_btnGuardarActionPerformed
 
     private void btnAdelanteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAdelanteActionPerformed
@@ -292,9 +308,39 @@ public class Pantalla extends javax.swing.JFrame {
             indi += 1;
             indice = String.valueOf(indi);
             txtIndice.setText(indice);
+            
+            
+            txtDni.setText(dnis[indi]);
+            txtNombre.setText(nombres[indi]);
+            txtApellido.setText(apellidos[indi]);
+            txtDireccion.setText(direcciones[indi]);
+            txtTelefono.setText(telefonos[indi]);
+            txtFechaNac.setText(fechasNac[indi]);
         }
         
     }//GEN-LAST:event_btnAdelanteActionPerformed
+
+    private void btnAtrasActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAtrasActionPerformed
+        String indice2 = txtIndice.getText();
+        int indi = Integer.parseInt(indice2);
+        
+        if (indi>0){
+            indi -= 1;
+            indice2 = String.valueOf(indi);
+            txtIndice.setText(indice2);
+            
+            txtDni.setText(dnis[indi]);
+            txtNombre.setText(nombres[indi]);
+            txtApellido.setText(apellidos[indi]);
+            txtDireccion.setText(direcciones[indi]);
+            txtTelefono.setText(telefonos[indi]);
+            txtFechaNac.setText(fechasNac[indi]);
+        }
+    }//GEN-LAST:event_btnAtrasActionPerformed
+
+    private void txtIndiceActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtIndiceActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txtIndiceActionPerformed
 
 
 
