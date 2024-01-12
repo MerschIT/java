@@ -6,6 +6,7 @@
 - En cada operación exitosa muestra por consola un mapa donde se detallan los asientos Libres (L) y Ocupados (X), y registra el asiento seleccionado como Ocupado (X).
 - Si el sistema detecta que el asiento elegido ya se encuentra ocupado, lo informa por consola.
 - Si al momento de elegir la fila y asiento se ingresa un número menor a 0 o mayor a 10 el sistema lo detecta el error e informa al usuario que se ha ingresado una fila o asiento que no existe. 
+- Luego de que el usuario indique la fila y asiento el sistema le pregunta si desea continuar asignando. 
 
 ![Captura Pantalla Gesiton de Asientos](https://github.com/MerschIT/java/blob/main/gestorAsientosAnfi/cap-pantalla-gestorAsientosAnfi.jpg?raw=true "Captura Pantalla Gesiton de Asientos")
 
