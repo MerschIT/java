@@ -76,7 +76,7 @@
 ------------
 
 
-#### MULTIPLICADOR SIN OPERADOR DE MULTIPLLICACIÓN
+#### MULTIPLICADOR SIN OPERADOR DE MULTIPLICACIÓN
 
 - Se pide mediante teclado que se ingresen 2 números (pueden ser positivos o negativos).
 - Internamente se convierte ambos números en sus absolutos (si alguno es negativo pasa a positivo).
@@ -85,3 +85,20 @@
 - En caso de que se haya ingresado un CERO se emite un mensaje correspondiente a dicha multiplicación.
 
 ![Multiplicador de 2 numeros](https://github.com/MerschIT/java/blob/main/ejerciciosCursoJavaUdemy/src/Multiplicar2NumerosSinOperadorMul.jpg?raw=true "Multiplicador de 2 numeros")
+
+
+------------
+
+#### MENU ITERATIVO
+
+- Se imprime en pantalla una lista de opciones a elegir en el menú, cada opción tiene indicado su correspondiente número.
+- Se ingresa por consola un número del 1 al 5.
+- Dependiendo del número ingresado se procede una ejecución en particular. 
+- Si se ingresa un número erroneo se emite un mensaje indicando el error y da la posibilidad de volver a elegir.
+- El número 5 finaliza el programa.
+![Menu iterativo](https://github.com/MerschIT/java/blob/main/ejerciciosCursoJavaUdemy/src/MenuDeOpcionesIterativo.jpg?raw=true "Menu iterativo")
+
+
+
+
+
