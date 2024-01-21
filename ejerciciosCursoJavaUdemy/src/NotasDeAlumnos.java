@@ -26,7 +26,7 @@ public class NotasDeAlumnos {
             System.out.println("Ingrese la nota del alumno: ");
             notasAlumnos[i]=teclado.nextDouble();
 
-            if(notasAlumnos[i]==0 || notasAlumnos[i]>10){
+            if(notasAlumnos[i]<=0 || notasAlumnos[i]>10){
                 System.out.println("Error en ingreso de notas. Finalizando programa.");
                 error = 1;
                 break;
