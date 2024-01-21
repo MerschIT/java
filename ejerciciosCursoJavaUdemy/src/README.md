@@ -72,3 +72,16 @@
 
 ![Promedio de notas](https://github.com/MerschIT/java/blob/main/ejerciciosCursoJavaUdemy/src/NotasDeAlumnos.jpg?raw=true "Promedio de notas")
 
+
+------------
+
+
+#### MULTIPLICADOR SIN OPERADOR DE MULTIPLLICACIÓN
+
+- Se pide mediante teclado que se ingresen 2 números (pueden ser positivos o negativos).
+- Internamente se convierte ambos números en sus absolutos (si alguno es negativo pasa a positivo).
+- El programa multiplica ambos números por medio de un for sin usar el operador [*].
+- Luego verifica si originalmente los valores ingresados eran positivos y/o negativos, y en bas a eso imprime el resultado.
+- En caso de que se haya ingresado un CERO se emite un mensaje correspondiente a dicha multiplicación.
+
+![Multiplicador de 2 numeros](https://github.com/MerschIT/java/blob/main/ejerciciosCursoJavaUdemy/src/Multiplicar2NumerosSinOperadorMul.jpg?raw=true "Multiplicador de 2 numeros")
