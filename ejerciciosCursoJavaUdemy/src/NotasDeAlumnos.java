@@ -47,7 +47,7 @@ public class NotasDeAlumnos {
         promedioNotasMenos4 = alumnosNotaMenos4 / cantAlumMenos4;
         notaTotal = notaTotal / notasAlumnos.length;
         if(error == 1){
-            System.out.println("Hubo un erorr en al carga de notas. Reinicie el programa.");
+            System.out.println("Hubo un error en al carga de notas. Reinicie el programa.");
         }else{
             if(alumnosNota1 != 0){
                 System.out.println("Cantidad de alumnos que sacaron solo 1 punto: "+ alumnosNota1);

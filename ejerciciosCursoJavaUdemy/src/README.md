@@ -47,3 +47,28 @@
         Ejemplo del resultado: "Guillermo Doe tiene el nombre más largo."
 
 ![El nombre mas largo](https://github.com/MerschIT/java/blob/main/ejerciciosCursoJavaUdemy/src/nombreMasLargo.jpg?raw=true "El nombre mas largo")
+
+
+------------
+
+
+#### EL MENOR DE 10 NUMEROS
+
+- El programa pide que se ingresen 10 números. 
+- Determina cual es el menor, y dependiendo si es mayor o menor a 10 imprime un mensaje informativo.
+
+
+------------
+
+
+#### PROMEDIO DE NOTAS DE ALUMNOS
+
+- Pide el ingreso de la nota que sacó cada alumno en un examen, hay 20 alumnos en el salón.
+- Si se ingresa de nota un número menor o igual a 0 y/o un numero superior a 10, se finaliza la ejecución del programa y se imprime un mensaje de error.
+- Imprime en pantalla el promedio de notas de quienes sacaron más de 5.
+- Imprime también el promedio de las notas de aquellos que sacaron menos de 4.
+- Inica la cantidad de alumnos que sacaron un 1.
+- Al finalizar imprime el promedio total de todas las notas obtenidas por la clase.
+
+![Promedio de notas](https://github.com/MerschIT/java/blob/main/ejerciciosCursoJavaUdemy/src/NotasDeAlumnos.jpg?raw=true "Promedio de notas")
+
