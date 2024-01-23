@@ -99,6 +99,17 @@
 ![Menu iterativo](https://github.com/MerschIT/java/blob/main/ejerciciosCursoJavaUdemy/src/MenuDeOpcionesIterativo.jpg?raw=true "Menu iterativo")
 
 
+------------
+
+#### CALCULAR EDAD
+
+- Se pide el ingreso de la fecha de nacimiento en formato DIA/MES/AÑO
+- El sistema calcula la edad, e informa tambien los meses y días que han pasado desde su nacimiento.
+![Calcular edad](https://github.com/MerschIT/java/blob/main/ejerciciosCursoJavaUdemy/src/CalcularEdad.jpg?raw=true "Calcular edad")
+
+
+
+
 
 
 
