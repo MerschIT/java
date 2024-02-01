@@ -6,7 +6,7 @@ identificador tipo Integer autoincremental, descripcion String, fecha tipo Date,
 cliente del tipo Cliente y finalmente un atributo de tipo arreglo de productos con
  4 elementos: Producto[] productos.
 
-- IDENTIFICADOR INTEGER AUTOINCREMENTAL [ ]
+- IDENTIFICADOR INTEGER AUTOINCREMENTAL [OK]
 - DESCRIPCIÓN STRING [OK]
 - FECHA DATE [OK] + OPCIÓN DE ELEGIR OTRA FECHA [OK]
 - CLASE CLIENTE [OK]
@@ -86,15 +86,20 @@ public class OrdenCompra {
         System.out.println(fechaStr);
 
 
+        //GENERACION DE INSTACIA DE PRODUCTOS
+        Compras compra1 = new Compras("Pedido de aceites");
+        System.out.print("Pedido de mercaderia N° "+compra1.getIdentificador()+
+                ". Descripcion de la compra: "+compra1.getDescripcion());
 
 
         Integer identificador; //DEBE SER AUTOINCREMENTAL
-      String descripcion;
+        String descripcion;
 
 
       // *********** CLIENTES ************
 
-      Cliente cli1 = new Cliente("Juan", "Gonzalez",12341234);
+      Cliente cli1 = new Cliente("Juan", "Gonzalez","3789031234");
+      Cliente cli2 = new Cliente("Mario", "Sanchez","3789000000");
 
       // *********** PRODUCTOS ************
 
@@ -104,19 +109,24 @@ public class OrdenCompra {
         productosLst[2] = new Producto("Playadito", "Yerba 1kg", 5);
         productosLst[3] = new Producto("Ledezma", "Azucar 1kg", 2);
 
-
+       //********** COMPRA DE LOS CLIENTES **********
+        System.out.println();
         System.out.println(productosLst[0].verDetalle());
         System.out.println(productosLst[1].verDetalle());
+        System.out.println("Para cliente: "+ cli1.getCliente());
 
-
+        System.out.println();
+        System.out.println(productosLst[2].verDetalle());
+        System.out.println(productosLst[3].verDetalle());
+        System.out.println("Para cliente: "+ cli2.getCliente());
 
 Producto fideoMarolio = new Producto("Marolio", "Fideos", 25);
 
 Producto caramelosArcor = new Producto("Arco", "Caramelos", 12);
 
 //LLAMANDO AL MÉTODO, IMPRIMIENDO POR CONSOLA
-System.out.println(fideoMarolio.verDetalle());
-System.out.println(caramelosArcor.verDetalle());
+//System.out.println(fideoMarolio.verDetalle());
+//System.out.println(caramelosArcor.verDetalle());
 System.out.println("---------------------------");
 System.out.println(fideoMarolio.pedirPack(4));
         System.out.println(caramelosArcor.pedirPack(2));

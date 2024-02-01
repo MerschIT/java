@@ -34,8 +34,7 @@ public class Producto {
     }
 
     public String verDetalle(){
-        return  "Fabricante: "+this.fabricante+ "." +
-                "\n Nombre: "+this.nombre+".\n Precio: "+this.precio;
+        return  " Fabricante: "+this.fabricante+ ". Nombre: "+this.nombre+". Precio: "+this.precio;
     }
 
     public String pedirPack(Integer pack){
